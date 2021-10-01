@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+*{
+
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    min-height: 100vh;
+    font-family: "Prata", sans-serif;
+    margin: 0;
+
+}
+
+aside{
+
+    background-color: rgba(82, 29, 9, 0.815);
+    border-right: 3px solid chocolate;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 300px;
+    
+}
+
+aside ul{
+
+    padding: 0;
+    list-style-type: none;
+
+}
+
+aside a{
+
+    color: white;
+    display: inline-block;
+    margin: 0.5rem;
+    text-decoration: none;
+    padding: 1rem;
+    
+
+}
+
+aside a:hover{
+
+    background-color: chocolate;
+
+}
+
+
+.black{
+
+    background-color: black;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.black:hover{
+
+    opacity: 0.8;
+
+}
+
+main{
+
+    color: white;
+    font-size: 2.5rem;
+    padding: 3rem;
+
+}
+
+main h1{
+
+    margin: 0;
+
+}
+
+main h3{
+
+    color: rgba(172, 51, 8, 0.911);
+    margin: 0;
+
+}
+
+@media screen and (max-width: 770px) {
+    
+    body{
+
+        flex-direction: column-reverse;
+        justify-content: space-between;
+
+    }
+
+    main{
+
+        min-height: 60vh;
+
+    }
+
+    aside{
+
+        border-top: 3px solid chocolate;
+        height: auto;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    aside ul{
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .black{
+
+        display: none;
+
+    }
+
+}
